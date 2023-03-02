@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js basic</title>
+</head>
+<body>
+    
+        <button  id="btn">click</button>
+        <ul id="ul-item">
+
+        </ul>
+    
+
+    <!-- <p id="paraId">hellow</p>
+    <p> welcome</p>
+    <p>welcome to all </p>
+    <p class="paraClass">qwertyuiop[asdfghjk</p> -->
+    <script>
+
+
+    // let paraId=document.getElementById("paraId");
+    // console.log(paraId);
+    // console.log(paraId.innerText);
+
+    // let paraA=document.getElementsByClassName("paraClass");
+    //     console.log(paraA);
+    //     console.log(paraA.innerText);
+
+
+
+
+        //addition
+        // var a = 7; var b=5; var c=10;
+        // var d=a+b+c;
+        // document.write(d);<br>
+        
+
+
+        // //subtraction
+        // var A=10; var B=3;
+        // var C=(A-B);
+        // document.write(c);
+
+    //     let k = document.querySelector("#k");
+    //     k.addEventListener("click",abc);
+    //  function abc(){
+            
+    //     let divElement=document.createElement('div');
+    //     document.body.appendChild(divElement)
+
+
+    //     let headElement=document.createElement('h1');
+    //     headElement.innerText="Welcome";
+    //     divElement.appendChild(headElement);
+
+    //     let paraElement=document.createElement('p');
+    //     paraElement.innerText="hello";
+    //     divElement.appendChild(paraElement);
+
+
+    //     let paraElement2=document.createElement('h1');
+    //     paraElement2.innerText="Welcome to all ";
+    //     paraElement2.setAttribute("id","name");
+    //     paraElement2.style.color="red";  
+    //     divElement.appendChild(paraElement2);
+
+
+    //     console.log(divElement);
+
+    //     }
+
+   // let array=[1,2,3,4,5,6,7,8,9,10];
+    // let btn=document.getElementById("btn");
+    // let ul=document.getElementById("ul-item");
+    // btn.addEventListener('click', myFunction);
+    // function myFunction(){
+    //     array.forEach(function (e){
+    //         let li=document.createElement("li");
+    //         li.innerText=e;
+    //         ul.appendChild(li)
+
+    //     })
+    // }
+
+    let array=[
+        {
+            name:"mari",
+            from:"tuti",
+            age:20
+        },
+        {
+            name:"ravi",
+            from:"tuti",
+            age:23
+        },
+        {
+            name:"kali",
+            from:"tuti",
+            age:25
+        }
+    ];
+
+    let btn=document.getElementById('btn');
+    let ulitem=document.getElementById('ul-item');
+    btn.addEventListener('click',arraylist)
+    function arraylist(){
+        array.forEach(function(e){
+            let li=document.createElement('li');
+            li.innerText=JSON.stringify (e);
+            ulitem.appendChild(li)
+        })
+    }
+
+
+
+    // let ul=document.getElementById("ul-item");
+    // function myFunction(){
+    //     array.forEach(function(e){
+    //         let li=document.createElement('li');
+    //         li.innerText=JSON.stringify(e);
+    //         ul.appendChild(li)
+    //     })
+    // }
+
+    </script>
+</body>
+    </html>
